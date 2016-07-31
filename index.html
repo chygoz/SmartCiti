@@ -25,19 +25,23 @@
 				<!-- Items -->
 					<section class="main items">
 						<div class="item"><a href="#form">
-						<span class="icon fa-diamond major"></span>
+						<span></span>
 						<h2>Move Me</h2>
 						
 						</a>	
 						</div>
 						<div class="item"><a href="#">
 							
-							<span class="icon fa-diamond major"></span>
+							<span></span>
 						<h2>TRACK MOVE</h2>
+						<span id="track">Tracking Number: <input type="text" autofocus></input></span>
 						</a>
 							
 						</div>
 					</section>
+
+					
+
 
 				<!-- CTA -->
 					<section id="cta" class="main special">
@@ -100,10 +104,17 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-function myFunction() {
-    alert("Your request has been sent successfuly!");
-}
-</script>
+			function myFunction() {
+			    alert("Your request has been sent successfuly!");
+			}
+
+			$(document).ready(function() {
+					$("h2").click(function(){
+						$("#track").toggle();
+					});
+
+				});
+			</script>
 
 
 	</body>
